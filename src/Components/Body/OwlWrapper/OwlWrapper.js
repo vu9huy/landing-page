@@ -87,6 +87,7 @@ const OwlWrapper = () => {
             {isImageViewerOpen && (
                 <Lightbox
                     images={imageTest}
+                    doubleClickZoom={0}
                     onClose={() => setIsImageViewerOpen(false)}
                 />
             )}
