@@ -1,0 +1,41 @@
+.owl-wrapper{
+    margin: 200px 0;
+    .light-box{
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        width: 100vw;
+        height: auto;
+        background-color: #fff;
+        display: none;
+        overflow:hidden
+    }
+    .light-box.active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .owl-item{
+        img{
+        max-width: 100%;
+        height: auto;
+        cursor: url(../../../assets/image/icon-zoom.png), pointer;
+        }
+    }
+    
+    .slick-dots li button:before {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        content: '';
+        color: #fff;
+        border: 3px solid #fff;
+        margin-top: -50px;
+        cursor: pointer;
+    }
+    .slick-dots li.slick-active button:before{
+        background-color: #fff;
+        border: 3px solid rgb(255, 255, 255);
+    }
+}

@@ -1,0 +1,49 @@
+.send-mail-container{
+    background-color: #47df84;
+    color: #fff;
+    padding: 80px 180px;
+    display: flex;
+    justify-content: space-between;
+    .send-mail-title{
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 35px;
+        display: flex;
+        align-items: center;
+    }
+    .input-group{
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 4px;
+        input{
+            padding: 25px;
+            outline: none;
+            border: none;
+            height: 30px;
+            font-size: 14px;
+            line-height: 18px;
+            color: rgb(104, 98, 98);
+            ::placeholder {
+                color: rgb(212, 206, 206);
+                font-size: 12px;
+            }
+        }
+        .input-group-submit{
+            cursor: pointer;
+            padding: 10px 24px;
+            color: #47df84;
+            font-size: 28px;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            transition: all 0.5s;
+        }
+        .input-group-submit:hover{
+            background-color: #b2f1cb;
+        }
+
+    }
+}
+
+

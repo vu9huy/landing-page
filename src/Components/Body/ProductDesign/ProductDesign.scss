@@ -1,0 +1,33 @@
+.product-design-container{
+    color: #fff;
+    .product-design-backgound-image{
+        background-image: url(../../../assets/image/product-design.jpg);
+        background-position: center center !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        .product-design-text-wrapper{
+            background-color: #A78A73;
+            padding: 5.5%;
+            width: 40%;
+            margin-left: 200px;
+            .product-design-text-large{
+                font-size: 45px ;
+                line-height: 50px;
+                padding-bottom: 28px;
+            }
+            .product-design-text-medium{
+                font-size: 24px ;
+                line-height: 30px;
+                padding-bottom: 28px;
+            }
+            .product-design-text-small{
+                font-size: 14px;
+                line-height: 24px;
+                padding-bottom: 28px;
+            }
+        }
+    }
+    
+        
+}

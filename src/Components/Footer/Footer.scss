@@ -1,0 +1,117 @@
+.footer{
+    background-color: #f6f6f6;
+    font-family: 'Open Sans', sans-serif;
+    .footer-container{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin: 0 167px;
+        .footer-company-container{
+            .footer-company-infor{
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                .footer-logo{
+                    grid-column: span 3;
+                    .address-company{
+                        font-size: 13px;
+                        color: #333;
+                        padding-top: 10px;
+                        width: 80%;
+                    }
+                    .social{
+                        padding-top: 22px;
+                        display: flex;
+                        flex-direction: row;
+                        gap: 16px;
+                        color: #333;
+                        font-size: 13px;
+                        cursor: pointer;
+                    }
+                }
+                .footer-section{
+                    grid-column: span 2;
+                    display: flex;
+                    flex-direction: column;
+                    .footer-section-title{
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        color: #282828;
+                        margin-bottom: 7px;
+                    }
+                    .footer-section-link{
+                        margin: 3px 0;
+                        text-decoration: none;
+                        color: #848484;
+                        font-size: 13px;
+                        line-height: 18px;
+                    }
+                }
+                .contact-container{
+                    grid-column: span 3;
+                    .contact-title{
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: #282828;
+                        font-weight: 600;
+                        margin-bottom: 11px;
+                    }
+                    .contact-desc{
+                        font-size: 13px;
+                        line-height: 22px;
+                        color: #333;
+                    }
+                    .input-field{
+                        background-color: #fff;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+                        border-radius: 4px;
+                        border: 1px solid rgba(0,0,0,.1);
+                        margin-top: 16px;
+                        input{
+                            padding: 8px 40px 9px 20px;
+                            font-size: 13px;
+                            outline: none;
+                            border: none;
+                            line-height: 18px;
+                            color: rgb(104, 98, 98);
+                            width: 70%;
+                            border-radius: 4px;
+                            ::placeholder {
+                                color: rgb(212, 206, 206);
+                                font-size: 12px;
+                            }
+                        }
+                        .input-submit{
+                            cursor: pointer;
+                            color: #848484;
+                            font-size: 16px;
+                            padding: 0 16px;
+                            border-top-right-radius: 4px;
+                            border-bottom-right-radius: 4px;
+                            transition: all 0.5s;
+                        }
+                        .input-submit:hover{
+                            opacity: 0.8;
+                        }
+                            
+                    }
+                }
+            }
+        }
+        hr{
+            border-top: 1px solid rgba(210,210,210,.8);
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        .copy-right{
+            text-align: center;
+            font-size: 13px;
+            color: #707070;
+        }
+            
+    }
+   
+    
+}

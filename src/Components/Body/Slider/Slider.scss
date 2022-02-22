@@ -1,0 +1,67 @@
+.slider-container{
+    color: #fff;
+    cursor: url(../../../assets/image/icon-move-light.png), pointer;
+    .slider-detail{
+        display: grid;   
+        grid-template-columns: repeat(20, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        .slider-text-container{
+            grid-column-start: 3;
+            grid-column-end: 11;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            .slider-text-title{
+                font-size: 80px;
+                line-height: 75px;
+                font-weight: 700;
+                margin-bottom: 32px;
+            }
+            .slider-description{
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 32px;
+                width: 80%;
+            }
+            .slider-text-button{
+                display: flex;
+                flex-direction: row;
+                .slider-text-btn-1{
+                    background-color: #fff;
+                    color: #000;
+                    font-weight: 600;
+                    margin-right: 20px;
+                    line-height: 20px;
+                }
+                .slider-text-btn-1:hover{
+                    background-color: rgba(210,210,210,.8);
+                }
+                .slider-text-btn-2{
+                    font-weight: 600;
+                    background-color: transparent;
+                    border: 2px solid #fff;
+                }
+                .slider-text-btn-2:hover{
+                    color: rgba(210,210,210,.8);
+                    border-color: rgba(210,210,210,.8);
+                }
+            }
+        }
+    }
+    .slick-dots li button:before {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        content: '';
+        color: #fff;
+        border: 3px solid #fff;
+        margin-top: -55px;
+        cursor: pointer;
+    }
+    .slick-dots li.slick-active button:before{
+        background-color: #fff;
+        border: 3px solid rgb(255, 255, 255);
+    }
+}

@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.App{
+    overflow-x: hidden;
+}
+.btn{
+    font-size: 12px;
+    padding: 8px 25px;
+    line-height: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.button{
+    color: #43cbcd;
+    border: 2px solid #43cbcd;
+    font-weight: 500;
+    width: fit-content;
+    font-size: 12px;
+    padding: 8px 25px;
+    line-height: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.button:hover{
+    color: #43cbcd;
+    opacity: 0.6;
+}
