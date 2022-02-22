@@ -28,14 +28,14 @@ const OwlWrapper = () => {
     };
     const [isImageViewerOpen, setIsImageViewerOpen] = useState(false)
     const [imageTest, setImageTest] = useState(owlImagesList);
-    const [isDrag, setIsDrag] = useState(false)
+    const [isDrag, setIsDrag] = useState(false);
     function handleClick(e) {
         if (!isDrag) {
             setIsImageViewerOpen(true);
         }
-        // console.log(e.target.src);
-        // console.log(e.target.baseURI.slice(0, -1) + owlImage2);
-        if (e.target.src == (e.target.baseURI.slice(0, -1) + owlImage1)) {
+        console.log(e.target.src.indexOf(owlImage2));
+        console.log(owlImage2);
+        if (e.target.src.indexOf(owlImage1) > -1) {
             setImageTest([
                 owlImage1,
                 owlImage2,
@@ -43,7 +43,7 @@ const OwlWrapper = () => {
                 owlImage4
             ])
         }
-        if (e.target.src == (e.target.baseURI.slice(0, -1) + owlImage2)) {
+        if (e.target.src.indexOf(owlImage2) > -1) {
             setImageTest([
                 owlImage2,
                 owlImage3,
@@ -51,7 +51,7 @@ const OwlWrapper = () => {
                 owlImage1
             ])
         }
-        if (e.target.src == (e.target.baseURI.slice(0, -1) + owlImage3)) {
+        if (e.target.src.indexOf(owlImage3) > -1) {
             setImageTest([
                 owlImage3,
                 owlImage4,
@@ -59,7 +59,7 @@ const OwlWrapper = () => {
                 owlImage2
             ])
         }
-        if (e.target.src == (e.target.baseURI.slice(0, -1) + owlImage4)) {
+        if (e.target.src.indexOf(owlImage4) > -1) {
             setImageTest([
                 owlImage4,
                 owlImage1,
@@ -78,7 +78,7 @@ const OwlWrapper = () => {
                             <img src={owlImage}
                                 onMouseDown={() => setIsDrag(false)}
                                 onMouseMove={() => setIsDrag(true)}
-                                onMouseUp={(e) => handleClick(e)}
+                                onClick={(e) => handleClick(e)}
                             />
                         </div>
                     )
