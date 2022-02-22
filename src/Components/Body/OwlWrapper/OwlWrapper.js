@@ -27,11 +27,12 @@ const OwlWrapper = () => {
         dotClass: 'dots'
     };
     const [isImageViewerOpen, setIsImageViewerOpen] = useState(false)
-    const test = useRef(null);
     const [imageTest, setImageTest] = useState(owlImagesList);
-
+    const [isDrag, setIsDrag] = useState(false)
     function handleClick(e) {
-        setIsImageViewerOpen(true);
+        if (!isDrag) {
+            setIsImageViewerOpen(true);
+        }
         // console.log(e.target.src);
         // console.log(e.target.baseURI.slice(0, -1) + owlImage2);
         if (e.target.src == (e.target.baseURI.slice(0, -1) + owlImage1)) {
@@ -74,7 +75,11 @@ const OwlWrapper = () => {
                 {owlImagesList.map((owlImage, index) => {
                     return (
                         <div className='owl-item' key={index}>
-                            <img src={owlImage} onClick={(e) => handleClick(e)} />
+                            <img src={owlImage}
+                                onMouseDown={() => setIsDrag(false)}
+                                onMouseMove={() => setIsDrag(true)}
+                                onMouseUp={(e) => handleClick(e)}
+                            />
                         </div>
                     )
                 })}
